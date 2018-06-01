@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onselectstart="return false;">
+	<div class="wrap" id="wrap">
+		<div id="photo_{{index}}" class="photo photo_front" onclick="turn(this)">
+			<div class="photo-wrap">
+				<div class="side side-front">
+					<p class="image"><img src="images/{{img}}" alt=""></p>
+					<p class="caption">{{artist}}</p>
+				</div>
+				<div class="side side-back">
+                    <p class="song">{{song}}</p>
+                    <p class="artistPicture"><img src="images/zhou.jpg" alt=""></p>
+                    <div class="lyricContainer">
+                        <div id="lyric_{{number1}}" class="lyric">{{lyric}}</div>
+                    </div>
+                    <audio id="music_{{number2}}" class="music" src="{{src}}" controls="controls">
+                        Your browser does not support this audio format.
+                    </audio>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
